@@ -21,12 +21,11 @@ function setup() {
   cx = width / 2;
   cy = 150;
   buffer = createGraphics(width, height);
-  buffer.background(235, 220, 230);
+  buffer.background(235, 220, 130);
   buffer.translate(cx, cy);
 }
 
 function draw() {
-//   background(175);
   imageMode(CORNER);
   image(buffer, 0, 0, width, height);
 
@@ -67,8 +66,8 @@ function draw() {
   a1 += a1_v;
   a2 += a2_v;
 
-  // a1_v *= 0.99;
-  // a2_v *= 0.99;
+  // a1_v *= 0.999;
+  // a2_v *= 0.999;
 
 //   buffer.stroke(0);
   if (frameCount > 1) {
